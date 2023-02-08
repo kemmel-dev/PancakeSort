@@ -4,6 +4,12 @@ public class PancakeSort {
 
     Pancake[] pancakes;
     public void bakePancakes(Pancake[] pancakes) {
+        for (int i = 0; i < pancakes.length; i++) {
+            if (pancakes[i].getDiameter() <= 0)
+            {
+                throw new IllegalArgumentException("Illegal diameter pancake provided.");
+            }
+        }
         this.pancakes = pancakes;
     }
 
