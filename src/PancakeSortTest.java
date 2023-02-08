@@ -67,9 +67,9 @@ public class PancakeSortTest {
     {
         PancakeSort sorter = new PancakeSort();
         sorter.bakePancakes(new Pancake[] {
-                new Pancake(1),
+                new Pancake(3),
                 new Pancake(2),
-                new Pancake(3)
+                new Pancake(1)
         });
         assert(sorter.pancakesAreSorted());
     }
@@ -79,9 +79,9 @@ public class PancakeSortTest {
     {
         PancakeSort sorter = new PancakeSort();
         sorter.bakePancakes(new Pancake[] {
+                new Pancake(3),
                 new Pancake(1),
-                new Pancake(1),
-                new Pancake(3)
+                new Pancake(1)
         });
         assert(sorter.pancakesAreSorted());
     }
@@ -91,9 +91,9 @@ public class PancakeSortTest {
     {
         PancakeSort sorter = new PancakeSort();
         sorter.bakePancakes(new Pancake[] {
-                new Pancake(3),
+                new Pancake(1),
                 new Pancake(2),
-                new Pancake(1)
+                new Pancake(3)
         });
         assert(!sorter.pancakesAreSorted());
     }
@@ -103,9 +103,9 @@ public class PancakeSortTest {
     {
         PancakeSort sorter = new PancakeSort();
         sorter.bakePancakes(new Pancake[] {
-                new Pancake(1),
+                new Pancake(3),
                 new Pancake(2),
-                new Pancake(3)
+                new Pancake(1)
         });
         sorter.sortPancakes();
         assert(sorter.pancakesAreSorted());
@@ -116,9 +116,9 @@ public class PancakeSortTest {
     {
         PancakeSort sorter = new PancakeSort();
         sorter.bakePancakes(new Pancake[] {
+                new Pancake(3),
                 new Pancake(1),
-                new Pancake(1),
-                new Pancake(3)
+                new Pancake(1)
         });
         sorter.sortPancakes();
         assert(sorter.pancakesAreSorted());
@@ -129,9 +129,9 @@ public class PancakeSortTest {
     {
         PancakeSort sorter = new PancakeSort();
         sorter.bakePancakes(new Pancake[] {
-                new Pancake(3),
+                new Pancake(1),
                 new Pancake(2),
-                new Pancake(1)
+                new Pancake(3)
         });
         sorter.sortPancakes();
         assert(sorter.pancakesAreSorted());
