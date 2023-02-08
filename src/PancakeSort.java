@@ -4,6 +4,10 @@ public class PancakeSort {
 
     Pancake[] pancakes;
     public void bakePancakes(Pancake[] pancakes) {
+        if (pancakes.length == 0 || pancakes.length > 25)
+        {
+            throw new IllegalArgumentException("Unsupported amount of pancakes provided.");
+        }
         for (int i = 0; i < pancakes.length; i++) {
             if (pancakes[i].getDiameter() <= 0)
             {
