@@ -20,11 +20,22 @@ public class PancakeSort {
     public void sortPancakes() {
     }
 
-    public Pancake[] getSortedPancakes() {
+    public Pancake[] getPancakes() {
         return pancakes;
     }
 
     public boolean pancakesAreSorted() {
+    int prevDiameter = Integer.MAX_VALUE;
+        for (Pancake p : pancakes)
+        {
+            int diameter = p.getDiameter();
+            if (diameter <= prevDiameter)
+            {
+                prevDiameter = diameter;
+            } else {
+                return false;
+            }
+        }
         return true;
     }
 }
