@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7be453-852c-42b7-9a87-4213a4b08def" name="Changes" comment="add pancakesAreSorted()">
+    <list default="true" id="1a7be453-852c-42b7-9a87-4213a4b08def" name="Changes" comment="expand tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PancakeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PancakeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PancakeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PancakeSortTest.java" afterDir="false" />
@@ -89,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675782842679</updated>
       <workItem from="1675782844747" duration="7984000" />
-      <workItem from="1675934868109" duration="1831000" />
+      <workItem from="1675934868109" duration="2837000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675782944537</created>
@@ -126,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675870953268</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add sorting algorithm">
+      <created>1675937179104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675937179104</updated>
+    </task>
+    <task id="LOCAL-00007" summary="expand tests">
+      <created>1675937192683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675937192683</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +163,8 @@
     <MESSAGE value="Add IllegalArgumentException for too few / too many pancakes" />
     <MESSAGE value="Update test inputs as they were in the wrong order" />
     <MESSAGE value="add pancakesAreSorted()" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pancakesAreSorted()" />
+    <MESSAGE value="add sorting algorithm" />
+    <MESSAGE value="expand tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="expand tests" />
   </component>
 </project>
