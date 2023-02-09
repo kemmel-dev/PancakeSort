@@ -131,7 +131,19 @@ public class PancakeSortTest {
         sorter.bakePancakes(new Pancake[] {
                 new Pancake(1),
                 new Pancake(2),
-                new Pancake(3)
+                new Pancake(3),
+                new Pancake(3),
+                new Pancake(13),
+                new Pancake(65),
+                new Pancake(33),
+                new Pancake(3),
+                new Pancake(18),
+                new Pancake(5),
+                new Pancake(8),
+                new Pancake(9),
+                new Pancake(5),
+                new Pancake(10),
+                new Pancake(3),
         });
         sorter.sortPancakes();
         assert(sorter.pancakesAreSorted());
