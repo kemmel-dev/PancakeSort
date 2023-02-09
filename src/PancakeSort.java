@@ -1,5 +1,8 @@
 import model.Pancake;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class PancakeSort {
 
     Pancake[] pancakes;
@@ -18,6 +21,37 @@ public class PancakeSort {
     }
 
     public void sortPancakes() {
+        int n = this.pancakes.length;
+        int maxIndex = -1;
+        while (n > 1) {
+            maxIndex = getIndexOfLargestPancake(n);
+            flipPancakes(maxIndex);
+            flipPancakes(n - 1);
+            n --;
+        }
+        Collections.reverse(Arrays.asList(pancakes));
+    }
+
+    private void flipPancakes(int atIndex) {
+        int left = 0;
+        while (left < atIndex) {
+            Pancake tmp = this.pancakes[left];
+            this.pancakes[left] = this.pancakes[atIndex];
+            this.pancakes[atIndex] = tmp;
+            atIndex --;
+            left ++;
+        }
+    }
+
+    private int getIndexOfLargestPancake(int n) {
+        int targetIndex = 0;
+        for (int i = 0; i < n; i++) {
+            if (this.pancakes[i].getDiameter() > this.pancakes[targetIndex].getDiameter())
+            {
+                targetIndex = i;
+            }
+        }
+        return targetIndex;
     }
 
     public Pancake[] getPancakes() {

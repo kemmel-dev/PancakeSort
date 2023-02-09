@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7be453-852c-42b7-9a87-4213a4b08def" name="Changes" comment="Add IllegalArgumentException for too few / too many pancakes">
+    <list default="true" id="1a7be453-852c-42b7-9a87-4213a4b08def" name="Changes" comment="add pancakesAreSorted()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PancakeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PancakeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PancakeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PancakeSortTest.java" afterDir="false" />
@@ -30,18 +30,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/workspace/SE_Specific/Workshops/Testing/PancakeSort",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="model" />
@@ -51,7 +53,7 @@
       <recent name="C:\workspace\SE_Specific\Workshops\Testing\PancakeSort" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PancakeSortTest">
     <configuration name="PancakeSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PancakeSort" />
       <option name="PACKAGE_NAME" value="" />
@@ -61,9 +63,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PancakeSortTest.UnsortedPancakesAreSortedAfterSorting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PancakeSort" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PancakeSortTest" />
+      <option name="METHOD_NAME" value="UnsortedPancakesAreSortedAfterSorting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PancakeSortTest" />
+        <item itemvalue="JUnit.PancakeSortTest.UnsortedPancakesAreSortedAfterSorting" />
       </list>
     </recent_temporary>
   </component>
@@ -76,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675782842679</updated>
       <workItem from="1675782844747" duration="7984000" />
+      <workItem from="1675934868109" duration="1831000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675782944537</created>
@@ -98,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675870325464</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update test inputs as they were in the wrong order">
+      <created>1675870931161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675870931161</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add pancakesAreSorted()">
+      <created>1675870953268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675870953268</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +147,8 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="throw IllegalArgumentException for zero and negative diameters" />
     <MESSAGE value="Add IllegalArgumentException for too few / too many pancakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add IllegalArgumentException for too few / too many pancakes" />
+    <MESSAGE value="Update test inputs as they were in the wrong order" />
+    <MESSAGE value="add pancakesAreSorted()" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pancakesAreSorted()" />
   </component>
 </project>
