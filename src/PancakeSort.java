@@ -2,11 +2,14 @@ import model.Pancake;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public class PancakeSort {
 
     Pancake[] pancakes;
     public void bakePancakes(Pancake[] pancakes) {
+        Set<Integer> diameters = new HashSet<Integer>();
         if (pancakes.length == 0 || pancakes.length > 25)
         {
             throw new IllegalArgumentException("Unsupported amount of pancakes provided.");
@@ -15,6 +18,12 @@ public class PancakeSort {
             if (pancakes[i].getDiameter() <= 0)
             {
                 throw new IllegalArgumentException("Illegal diameter pancake provided.");
+            }
+            else if (diameters.contains(pancakes[i].getDiameter())) {
+                throw new IllegalArgumentException("At least two pancakes with the same size were provided.");
+            }
+            else {
+                diameters.add(pancakes[i].getDiameter());
             }
         }
         this.pancakes = pancakes;
